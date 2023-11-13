@@ -40,10 +40,13 @@ function onSelectBreed(e) {
     .then(breed => {
       createCatInfoMarkup(breed);
       catInfoEl.classList.remove('hidden');
+      errorEl.classList.add('hidden');
     })
     .catch(error => {
       console.log(error);
       errorEl.classList.remove('hidden');
+      catInfoEl.innerHTML = '';
+      catInfoEl.classList.add('hidden');
     })
     .finally(() => {
       loaderEl.classList.add('hidden');
