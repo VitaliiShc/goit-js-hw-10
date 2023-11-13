@@ -1,0 +1,49 @@
+.cat-info {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 30px;
+  background-color: rgb(147, 190, 247);
+  padding: 20px 100px;
+}
+
+.breed-select {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 300px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.img-container {
+}
+
+.img-cat {
+  width: auto;
+}
+
+.description-container {
+    width: 360px;
+
+}
+
+.description-title {
+}
+
+.description-text {
+}
+
+.description-character {
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .cat-info {
+  flex-wrap: wrap;
+  }
+}
